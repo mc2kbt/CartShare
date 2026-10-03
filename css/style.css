@@ -1,0 +1,33 @@
+body { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    background-color: #f4f7f6; 
+    color: #333; 
+}
+.hero-banner { 
+    background: linear-gradient(135deg, #0d6efd, #0dcaf0); 
+    color: white; 
+    padding: 40px 0; 
+    border-radius: 0 0 20px 20px; 
+}
+.card-custom { 
+    border: none; 
+    border-radius: 12px; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
+    background: #fff; 
+    transition: transform 0.2s; 
+}
+.card-custom:hover { 
+    transform: translateY(-3px); 
+}
+.log-item { 
+    font-size: 0.85rem; 
+    padding: 8px 0; 
+    border-bottom: 1px solid #eee; 
+}
+
+/* Print Rules - Hides buttons and catalog when printing */
+@media print {
+    .no-print { display: none !important; }
+    body { background: white; }
+    .card-custom { box-shadow: none; border: 1px solid #ddd; }
+}
